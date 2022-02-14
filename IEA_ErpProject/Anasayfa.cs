@@ -1,4 +1,7 @@
-﻿using IEA_ErpProject.BilgiGiris.Hastaneler;
+﻿using IEA_ErpProject.BilgiGiris.Doktorlar;
+using IEA_ErpProject.BilgiGiris.Firmalar;
+using IEA_ErpProject.BilgiGiris.Hastaneler;
+using IEA_ErpProject.BilgiGiris.Personeller;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -89,6 +92,43 @@ namespace IEA_ErpProject
                 frm.MdiParent = Form.ActiveForm;
                 frm.Show();
             }
+            else if (isim == "Doktorlar Listesi" && Application.OpenForms["DoktorlarListesi"] == null)
+            {
+                DoktorlarListesi frm = new DoktorlarListesi();
+                frm.MdiParent = Form.ActiveForm;
+                frm.Show();
+            }
+            else if (isim == "Doktor Bilgi Giriş" && Application.OpenForms["DoktorGiris"] == null)
+            {
+                DoktorGiris frm = new DoktorGiris();
+                frm.MdiParent = Form.ActiveForm;
+                frm.Show();
+            }
+            else if (isim == "Firma Listesi" && Application.OpenForms["FirmaListesi"] == null)
+            {
+                FirmaListesi frm = new FirmaListesi();
+                frm.MdiParent = Form.ActiveForm;
+                frm.Show();
+            }
+            else if (isim == "Firma Bilgi Giriş" && Application.OpenForms["FirmaGiris"] == null)
+            {
+                FirmaGiris frm = new FirmaGiris();
+                frm.MdiParent = Form.ActiveForm;
+                frm.Show();
+            }
+            else if (isim == "Personel Listesi" && Application.OpenForms["PersonelListesi"] == null)
+            {
+                PersonelListesi frm = new PersonelListesi();
+                frm.MdiParent = Form.ActiveForm;
+                frm.Show();
+            }
+            else if (isim == "Personel Bilgi Giriş" && Application.OpenForms["PersonelGiris"] == null)
+            {
+                PersonelGiris frm = new PersonelGiris();
+                frm.MdiParent = Form.ActiveForm;
+                frm.Show();
+            }
         }
     }
 }
+

@@ -35,6 +35,7 @@
             this.pnlSol = new System.Windows.Forms.Panel();
             this.scMenu = new System.Windows.Forms.SplitContainer();
             this.tvMenu = new System.Windows.Forms.TreeView();
+            this.btnUrunGiris = new System.Windows.Forms.Button();
             this.btnBilgiGiris = new System.Windows.Forms.Button();
             this.pnlSolÜst = new System.Windows.Forms.Panel();
             this.btnSolÜstCollapse = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.btnSolÜstAra = new System.Windows.Forms.Button();
             this.txtSolÜstAra = new System.Windows.Forms.TextBox();
             this.splitter2 = new System.Windows.Forms.Splitter();
-            this.btnUrunGiris = new System.Windows.Forms.Button();
             this.tabPGenel.SuspendLayout();
             this.pnlSol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scMenu)).BeginInit();
@@ -60,7 +60,7 @@
             this.tabPGenel.Location = new System.Drawing.Point(0, 0);
             this.tabPGenel.Name = "tabPGenel";
             this.tabPGenel.SelectedIndex = 0;
-            this.tabPGenel.Size = new System.Drawing.Size(1438, 151);
+            this.tabPGenel.Size = new System.Drawing.Size(1438, 156);
             this.tabPGenel.TabIndex = 0;
             // 
             // tapPage1
@@ -69,7 +69,7 @@
             this.tapPage1.Location = new System.Drawing.Point(4, 25);
             this.tapPage1.Name = "tapPage1";
             this.tapPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tapPage1.Size = new System.Drawing.Size(1430, 122);
+            this.tapPage1.Size = new System.Drawing.Size(1430, 127);
             this.tapPage1.TabIndex = 0;
             this.tapPage1.Text = "Genel";
             // 
@@ -87,7 +87,7 @@
             // 
             this.splitter1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter1.Location = new System.Drawing.Point(0, 151);
+            this.splitter1.Location = new System.Drawing.Point(0, 156);
             this.splitter1.Name = "splitter1";
             this.splitter1.Size = new System.Drawing.Size(1438, 5);
             this.splitter1.TabIndex = 1;
@@ -99,13 +99,14 @@
             this.pnlSol.Controls.Add(this.scMenu);
             this.pnlSol.Controls.Add(this.pnlSolÜst);
             this.pnlSol.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSol.Location = new System.Drawing.Point(0, 156);
+            this.pnlSol.Location = new System.Drawing.Point(0, 161);
             this.pnlSol.Name = "pnlSol";
-            this.pnlSol.Size = new System.Drawing.Size(318, 581);
+            this.pnlSol.Size = new System.Drawing.Size(343, 576);
             this.pnlSol.TabIndex = 2;
             // 
             // scMenu
             // 
+            this.scMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.scMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scMenu.Location = new System.Drawing.Point(0, 57);
             this.scMenu.Name = "scMenu";
@@ -121,8 +122,8 @@
             this.scMenu.Panel2.BackColor = System.Drawing.SystemColors.Info;
             this.scMenu.Panel2.Controls.Add(this.btnUrunGiris);
             this.scMenu.Panel2.Controls.Add(this.btnBilgiGiris);
-            this.scMenu.Size = new System.Drawing.Size(318, 524);
-            this.scMenu.SplitterDistance = 267;
+            this.scMenu.Size = new System.Drawing.Size(343, 519);
+            this.scMenu.SplitterDistance = 264;
             this.scMenu.TabIndex = 4;
             // 
             // tvMenu
@@ -130,9 +131,19 @@
             this.tvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvMenu.Location = new System.Drawing.Point(0, 0);
             this.tvMenu.Name = "tvMenu";
-            this.tvMenu.Size = new System.Drawing.Size(318, 267);
+            this.tvMenu.Size = new System.Drawing.Size(343, 264);
             this.tvMenu.TabIndex = 0;
             this.tvMenu.DoubleClick += new System.EventHandler(this.tvMenu_DoubleClick);
+            // 
+            // btnUrunGiris
+            // 
+            this.btnUrunGiris.Location = new System.Drawing.Point(101, 20);
+            this.btnUrunGiris.Name = "btnUrunGiris";
+            this.btnUrunGiris.Size = new System.Drawing.Size(83, 59);
+            this.btnUrunGiris.TabIndex = 1;
+            this.btnUrunGiris.Text = "Ürün  İşlemleri";
+            this.btnUrunGiris.UseVisualStyleBackColor = true;
+            this.btnUrunGiris.Click += new System.EventHandler(this.btnUrunGiris_Click);
             // 
             // btnBilgiGiris
             // 
@@ -154,7 +165,7 @@
             this.pnlSolÜst.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSolÜst.Location = new System.Drawing.Point(0, 0);
             this.pnlSolÜst.Name = "pnlSolÜst";
-            this.pnlSolÜst.Size = new System.Drawing.Size(318, 57);
+            this.pnlSolÜst.Size = new System.Drawing.Size(343, 57);
             this.pnlSolÜst.TabIndex = 4;
             // 
             // btnSolÜstCollapse
@@ -162,7 +173,7 @@
             this.btnSolÜstCollapse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSolÜstCollapse.BackgroundImage = global::IEA_ErpProject.Properties.Resources.RightLeft2Red;
             this.btnSolÜstCollapse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSolÜstCollapse.Location = new System.Drawing.Point(287, 26);
+            this.btnSolÜstCollapse.Location = new System.Drawing.Point(312, 26);
             this.btnSolÜstCollapse.Name = "btnSolÜstCollapse";
             this.btnSolÜstCollapse.Size = new System.Drawing.Size(28, 26);
             this.btnSolÜstCollapse.TabIndex = 3;
@@ -176,7 +187,7 @@
             this.lblMenu.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMenu.Location = new System.Drawing.Point(3, 28);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(283, 22);
+            this.lblMenu.Size = new System.Drawing.Size(308, 22);
             this.lblMenu.TabIndex = 2;
             this.lblMenu.Text = "****";
             this.lblMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -186,7 +197,7 @@
             this.btnSolÜstAra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSolÜstAra.BackgroundImage = global::IEA_ErpProject.Properties.Resources.Ara32x32;
             this.btnSolÜstAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSolÜstAra.Location = new System.Drawing.Point(287, 0);
+            this.btnSolÜstAra.Location = new System.Drawing.Point(312, 0);
             this.btnSolÜstAra.Name = "btnSolÜstAra";
             this.btnSolÜstAra.Size = new System.Drawing.Size(28, 26);
             this.btnSolÜstAra.TabIndex = 1;
@@ -198,27 +209,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSolÜstAra.Location = new System.Drawing.Point(3, 3);
             this.txtSolÜstAra.Name = "txtSolÜstAra";
-            this.txtSolÜstAra.Size = new System.Drawing.Size(283, 22);
+            this.txtSolÜstAra.Size = new System.Drawing.Size(308, 22);
             this.txtSolÜstAra.TabIndex = 0;
             // 
             // splitter2
             // 
             this.splitter2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.splitter2.Location = new System.Drawing.Point(318, 156);
+            this.splitter2.Location = new System.Drawing.Point(343, 161);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(6, 581);
+            this.splitter2.Size = new System.Drawing.Size(5, 576);
             this.splitter2.TabIndex = 3;
             this.splitter2.TabStop = false;
-            // 
-            // btnUrunGiris
-            // 
-            this.btnUrunGiris.Location = new System.Drawing.Point(101, 20);
-            this.btnUrunGiris.Name = "btnUrunGiris";
-            this.btnUrunGiris.Size = new System.Drawing.Size(83, 59);
-            this.btnUrunGiris.TabIndex = 1;
-            this.btnUrunGiris.Text = "Ürün  İşlemleri";
-            this.btnUrunGiris.UseVisualStyleBackColor = true;
-            this.btnUrunGiris.Click += new System.EventHandler(this.btnUrunGiris_Click);
             // 
             // Anasayfa
             // 

@@ -40,6 +40,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +59,30 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorGiris.Designer.cs">
+      <DependentUpon>DoktorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorlarListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorlarListesi.Designer.cs">
+      <DependentUpon>DoktorlarListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaGiris.Designer.cs">
+      <DependentUpon>FirmaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaListesi.Designer.cs">
+      <DependentUpon>FirmaListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="BilgiGiris\Hastaneler\HastaneGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,16 +95,79 @@
     <Compile Include="BilgiGiris\Hastaneler\HastanelerListesi.Designer.cs">
       <DependentUpon>HastanelerListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="BilgiGiris\Personeller\PersonelGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Personeller\PersonelGiris.Designer.cs">
+      <DependentUpon>PersonelGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Personeller\PersonelListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Personeller\PersonelListesi.Designer.cs">
+      <DependentUpon>PersonelListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\ErpProModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErpProModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\ErpProModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\ErpProModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Sehirler.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sysdiagrams.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblHastaneler.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblHastaneTipleri.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Doktorlar\DoktorGiris.resx">
+      <DependentUpon>DoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Doktorlar\DoktorlarListesi.resx">
+      <DependentUpon>DoktorlarListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Firmalar\FirmaGiris.resx">
+      <DependentUpon>FirmaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Firmalar\FirmaListesi.resx">
+      <DependentUpon>FirmaListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BilgiGiris\Hastaneler\HastaneGiris.resx">
       <DependentUpon>HastaneGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BilgiGiris\Hastaneler\HastanelerListesi.resx">
       <DependentUpon>HastanelerListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Personeller\PersonelGiris.resx">
+      <DependentUpon>PersonelGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Personeller\PersonelListesi.resx">
+      <DependentUpon>PersonelListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +179,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EntityDeploy Include="Entity\ErpProModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ErpProModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entity\ErpProModel.edmx.diagram">
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,16 +207,28 @@
     <None Include="res\RightLeft2Red.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BilgiGiris\Doktorlar\" />
-    <Folder Include="BilgiGiris\Firmalar\" />
-    <Folder Include="BilgiGiris\Personeller\" />
     <Folder Include="Fonksiyonlar\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Entity\ErpProModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+      <LastGenOutput>ErpProModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entity\ErpProModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+      <LastGenOutput>ErpProModel.cs</LastGenOutput>
+    </Content>
     <Content Include="ReadMe.txt" />
+    <None Include="res\exit-64.png" />
+    <None Include="res\45-452586_cleaning-icon-clipart-escoba-icon.png" />
+    <None Include="res\cop24x24.png" />
+    <None Include="res\Update32x32.png" />
+    <None Include="res\Save-icon64x64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
